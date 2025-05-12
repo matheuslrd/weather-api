@@ -3,7 +3,6 @@ import globals from 'globals';
 import js from '@eslint/js';
 import tseslint from 'typescript-eslint';
 import pluginSecurity from 'eslint-plugin-security';
-import pluginNode from 'eslint-plugin-node';
 
 export default defineConfig([
     { files: ['**/*.{js,mjs,cjs,ts}'] },
