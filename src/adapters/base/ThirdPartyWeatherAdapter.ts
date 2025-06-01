@@ -8,7 +8,7 @@ export class ThirdPartyWeatherAdapter implements IThirdPartyWeatherAdapter {
         this.client = new TimelineWeatherApiAdapter();
     }
 
-    getWeather() {
-        return this.client.getWeather();
+    getWeather(location: string) {
+        return this.client.getWeather(location);
     }
 }

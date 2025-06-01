@@ -1,3 +1,5 @@
+import { WeatherResponse } from './VisualCrossingWeatherApi';
+
 export interface IThirdPartyWeatherAdapter {
-    getWeather: () => void;
+    getWeather: (location: string) => Promise<WeatherResponse>;
 }
