@@ -21,5 +21,5 @@ export const errorHandler = (err: Error, req: Request, res: Response, next: Next
     const statusCode = error.statusCode;
     const body = error.getBody();
 
-    res.status(statusCode).send(body); // Fixed: httpCode -> statusCode
+    res.status(statusCode).send(body);
 };
