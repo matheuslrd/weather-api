@@ -6,10 +6,8 @@ const router = express.Router();
 
 router.get(
     '/',
-    wrapAction(async (req, res) => {
-        // @ts-ignore
+    wrapAction<any, any, { location: string }>(async (req, res) => {
         const weather = await getWeather(req.query.location);
-        console.log('🚀 ~ router.get ~ req.query.location:', req.query.location);
         res.json(weather);
     })
 );
